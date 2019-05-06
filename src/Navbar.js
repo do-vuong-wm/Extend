@@ -8,7 +8,8 @@ class Navbar extends React.Component{
     return(
 
         <div className="Navbar">
-        This is a navbar...
+        <div className="Logo"> <p>Extend Web Design</p> </div>
+        <div className="HomeButton"> <a href="localhost:3000">Home</a> </div>
         </div>
 
     );
