@@ -4,13 +4,15 @@ import './App.css';
 import Navbar from './Navbar';
 import Container from './Container';
 
+//let container =  {name: 'Hello World!'};
+
 class App extends React.Component {
   render() {
     return(
 
       <div className="App">
         <Navbar />
-        <Container />
+        <Container containerValue='Hello World!'/>
       </div>
     // <div className="App">
     //   <header className="App-header">
