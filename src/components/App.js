@@ -2,7 +2,10 @@ import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
-import Container from './Container';
+import Header from './Header';
+import Services from './Services';
+import About from './About';
+import Footer from './Footer';
 
 //let container =  {name: 'Hello World!'};
 
@@ -11,9 +14,13 @@ class App extends React.Component {
     return(
 
       <div className="App">
-        <Navbar />
-        <Container containerValue='Hello World!'/>
+        <Navbar/>
+        <Header containerValue='Hello World!'/>
+        <Services/>
+        <About/>
+        <Footer/>
       </div>
+
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />

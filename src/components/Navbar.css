@@ -1,0 +1,96 @@
+.Navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: calc(45px + 0.5vh);
+  background-color: transparent;
+
+}
+
+.Navbar .Logo{
+
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+
+}
+
+.Navbar .Logo a{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+  font-size: calc(1.3em + 0.1vmin);
+  text-align: center;
+  color: white;
+
+}
+
+.Navbar .NavButtons{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+
+}
+
+.Navbar button{
+
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  margin: 10px;
+  padding: 5px;
+  width: 100px;
+  background-color: transparent;
+  font-size: calc(1em + 0.1vmin);
+  border: 1.5px solid white;
+  color: white;
+  border-radius: 15px;
+
+}
+
+.Navbar button:hover{
+  background-color: white;
+  color: black;
+}
+
+.Navbar button:active{
+
+}
+/* use media for a reponsive webpage*/
+
+@media all and (min-width: 992px){
+  .Navbar{
+    max-width: 960px;
+  }
+}
+
+@media all and (min-width: 1200px){
+  .Navbar{
+    max-width: 1140px;
+  }
+}
+
+@media all and (max-height: 600px) {
+  .Navbar{
+    height:auto;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .Navbar .NavButtons{
+    display: none;
+  }
+}

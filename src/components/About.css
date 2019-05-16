@@ -1,0 +1,32 @@
+.About-Container{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 400px;
+  background-color: #62e0d8;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+
+}
+
+.About-Container p{
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media all and (min-width: 992px){
+  .About-Container{
+    max-width: 960px;
+  }
+}
+
+@media all and (min-width: 1200px){
+  .About-Container{
+    max-width: 1140px;
+  }
+}

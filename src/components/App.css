@@ -1,11 +1,13 @@
 .App {
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: auto;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  align-content: center;
   overflow: auto;
+  background-image: linear-gradient(to bottom, #4180f4, #428ff4);
 }
 
 .App-logo {

@@ -1,8 +1,8 @@
 import React from 'react';
-import './Container.css';
+import './Header.css';
 
 // it is state component now
-class Container extends React.Component{
+class Header extends React.Component{
   // class constructor
   constructor(props){
     super(props);
@@ -28,9 +28,17 @@ class Container extends React.Component{
     return(
 
       <div className="Container">
-      <h1>{this.props.containerValue}</h1>
-      <h2>{this.state.counter},</h2>
-      <button type="button" onClick={this.updateCounter}>Press to update state</button>
+        <div className="Header">
+          <div className="Title">
+            <h1>
+              Extend your business with a website
+            </h1>
+          </div>
+          <div className="WebsiteInfo">
+            <h2>We aim to build your website for your business</h2>
+            <h2>Gain more customers with a website</h2>
+          </div>
+        </div>
       </div>
 
     );
@@ -39,4 +47,4 @@ class Container extends React.Component{
 
 }
 
-export default Container;
+export default Header;
