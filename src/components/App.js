@@ -1,25 +1,39 @@
 import React from 'react';
 //import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Navbar from './Navbar';
-import Header from './Header';
-import Services from './Services';
-import About from './About';
+import Home from './Home';
+import Contact from './Contact';
 import Footer from './Footer';
 
-//let container =  {name: 'Hello World!'};
-
 class App extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {};
+  }
+
+  componentDidMount(){
+  }
+
+  componentWillUnmount(){
+  }
+
+
+
   render() {
     return(
-
-      <div className="App">
-        <Navbar/>
-        <Header containerValue='Hello World!'/>
-        <Services/>
-        <About/>
-        <Footer/>
-      </div>
+      <Router>
+        <div className="App">
+          <Navbar/>
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route exact path='/contact' component={Contact} />
+            </Switch>
+          <Footer/>
+        </div>
+      </Router>
 
     // <div className="App">
     //   <header className="App-header">

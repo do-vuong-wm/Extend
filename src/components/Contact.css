@@ -1,0 +1,16 @@
+.Contact-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    padding: 100px;
+    margin: 0;
+    background: tan;
+}
+
+.Contact-Container input{
+    width: 200px;
+}

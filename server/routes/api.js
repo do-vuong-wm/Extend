@@ -12,7 +12,11 @@ router.get('/get', (req, res) => {
 });
 
 router.post('/post', (req, res) => {
-  UserInfo.create({}).then(userInfos => res.json(userInfos))
+  UserInfo.create({
+    user_name: req.body.user_name, 
+    user_email: req.body.user_email, 
+    user_msg: req.body.user_msg
+  }).then(userInfos => res.json(userInfos))
 });
 
 module.exports = router;

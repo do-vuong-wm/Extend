@@ -10,9 +10,9 @@ const PASSWORD = process.env.DBPASSWORD;
 console.log(USERNAME + ' ' + PASSWORD);
 console.log(__dirname);
 const app = express();
-const router = express();
 const api = require('./routes/api');
 
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 app.use(logger("dev"));
