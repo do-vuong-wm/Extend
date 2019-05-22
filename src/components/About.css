@@ -11,7 +11,7 @@
   color: white;
   padding: 20px;
   border-radius: 15px;
-
+  /*word-wrap: normal, white-space: pre*/
 }
 
 .About-Container p{
@@ -19,14 +19,8 @@
   text-align: center;
 }
 
-@media all and (min-width: 992px){
+@media all and (max-width: 352px){
   .About-Container{
-    max-width: 960px;
-  }
-}
-
-@media all and (min-width: 1200px){
-  .About-Container{
-    max-width: 1140px;
+    height: auto;
   }
 }

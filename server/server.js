@@ -29,6 +29,6 @@ let db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 db.once("open", () => console.log("Connected to the database."));
 
-app.use('/api', api)
+app.use('/api', api);
 
 app.listen(PORT, () => console.log(`LISTENING ON PORT ${PORT}`));

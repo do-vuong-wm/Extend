@@ -1,4 +1,4 @@
-.Header{
+.Header-Container{
 
   display: flex;
   flex-direction: column;
@@ -8,6 +8,7 @@
   width: 100%;
   height: 600px;
   background-color: transparent;
+  padding: 20px;
   /*background-image: url(images/testpicture2.jpg);*/
   color: white;
   /*border-bottom: 2px solid white;
@@ -15,7 +16,7 @@
 
 }
 
-.Header .Title{
+.Header-Container .Title{
   width: 100%;
   text-align: center;
   height: auto;
@@ -23,7 +24,7 @@
   margin-top: 100px;
 }
 
-.Header .WebsiteInfo{
+.Header-Container .WebsiteInfo{
   width: 100%;
   height: auto;
   margin-top: 100px;
@@ -31,16 +32,8 @@
   background-color: transparent;
 }
 
-/*
-@media all and (min-width: 992px){
-  .Header{
-    max-width: 960px;
+@media all and (max-width: 352px){
+  .Header-Container{
+    height: auto;
   }
 }
-
-@media all and (min-width: 1200px){
-  .Header{
-    max-width: 1140px;
-  }
-}
-*/

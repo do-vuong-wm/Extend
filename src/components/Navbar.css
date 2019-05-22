@@ -1,11 +1,10 @@
 .Navbar{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  padding: 5px;
-  margin-right: auto;
-  margin-left: auto;
+  align-content: center;
+  padding: 0 15px 0 15px;
   width: 100%;
   height: calc(45px + 0.5vh);
   background-color: transparent;
@@ -13,13 +12,17 @@
 }
 
 .Navbar .Logo{
-
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   width: auto;
-  height: auto;
+  height: 100%;
   background-color: transparent;
+  flex: 1 1 auto;
 
 }
 
@@ -34,25 +37,46 @@
 
 }
 
-.Navbar .NavButtons{
+.Navbar .NavButtons-Container{
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   margin: 0;
   padding: 0;
   width: auto;
-  height: auto;
+  height: 100%;
   background-color: transparent;
+  flex: 1 1 auto;
+  
+}
+
+.Navbar .NavButtons-Container .NavButtons{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 100%;
+  background-color: transparent;
+  flex: 1 1 auto;
 
 }
 
-.Navbar button{
+.Navbar .NavButtons-Container .NavButtons button{
 
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
-  margin: 10px;
+  margin: 0 0 0 10px;
   padding: 5px;
   width: 100px;
+  height: 35px;
   background-color: transparent;
   font-size: calc(1em + 0.1vmin);
   border: 1.5px solid white;
@@ -61,13 +85,20 @@
 
 }
 
-.Navbar button:hover{
+.Navbar .NavButtons-Container .NavButtons button:hover{
   background-color: white;
   color: black;
 }
 
-.Navbar button:active{
-
+.Navbar .NavButtons-Container .NavButtons-Menu{
+  display: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: white;
+  margin: 0 0 0 10px;
+  width: auto;
+  background-color: transparent;
+  flex: 1 1 auto;
 }
 /* use media for a reponsive webpage*/
 
@@ -83,14 +114,11 @@
   }
 }
 
-@media all and (max-height: 600px) {
-  .Navbar{
-    height:auto;
-  }
-}
-
 @media all and (max-width: 600px) {
-  .Navbar .NavButtons{
+  .Navbar .NavButtons-Container .NavButtons-Menu{
+    display: flex;
+  }
+  .Navbar .NavButtons-Container .NavButtons{
     display: none;
   }
 }

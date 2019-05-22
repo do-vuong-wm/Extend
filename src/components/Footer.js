@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Footer extends React.Component{
 
@@ -7,8 +8,9 @@ class Footer extends React.Component{
 
     return(
         <div className="Footer-Container">
-          <p> This is the footer </p>
-          <p> Social Medias </p>
+          <FontAwesomeIcon className="Social-Icons" icon={['fab', 'twitter']} />
+          <FontAwesomeIcon className="Social-Icons" icon={['fab', 'facebook']} />
+          <FontAwesomeIcon className="Social-Icons" icon={['fab', 'instagram']} />
         </div>
     );
 

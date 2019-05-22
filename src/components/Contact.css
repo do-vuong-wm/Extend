@@ -1,16 +1,122 @@
 .Contact-Container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     align-content: center;
     width: 100%;
-    height: auto;
-    padding: 100px;
+    height: 880px;
     margin: 0;
-    background: tan;
+    background-color: transparent;
+}
+
+.Contact-Container form[name="Contact-Form"]{
+    background-color: #234370;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    border: 2px solid #234370;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    /*justify-content: center;
+    align-content: center;
+    align-items: center;*/
+    margin: 0;
+    padding: 30px;
+}
+
+.Contact-Container .firstName-Input, .lastName-Input, .userEmail-Input, .userMsg-Input, .Submit-Input{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    height: auto;
+    margin: 0;
+    padding: 10px 20px 10px 20px;
+}
+
+.Contact-Container .firstName-Input, .lastName-Input{
+    width: 50%;
+}
+
+
+.Contact-Container .userEmail-Input, .userMsg-Input, .Submit-Input{
+    width: 100%;
+}
+
+/* select by attributes and tag*/
+
+.Contact-Container span{
+
+    font-size: medium;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    padding: 0;
+
 }
 
 .Contact-Container input{
-    width: 200px;
+    font-size: 1.05em;
+    padding: 16px 32px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.Contact-Container input:focus{
+    border: 2px solid blue;
+}
+
+.Contact-Container textarea:focus{
+    border: 2px solid blue;
+}
+
+.Contact-Container input:focus::placeholder{
+    color: blue;
+}
+
+.Contact-Container input[name="firstName"], input[name="lastName"]{
+    width: 100%;
+}
+
+.Contact-Container textarea{
+    resize: none;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.Contact-Container input[type="submit"]{
+    cursor: pointer;
+    background-color: #09c153;
+    color: white;
+    font-size: 1.2em;
+    border: 2px solid #1bbc0d;
+}
+
+.Contact-Container input[type="submit"]:active{
+    background-color: #16b208;
+}
+
+@media all and (max-width: 600px){
+    .Contact-Container form[name="Contact-Form"]{
+        max-width: 100%;
+        padding: 20px 0 30px 0;
+    }
+    .Contact-Container .firstName-Input, .lastName-Input, .userEmail-Input, .userMsg-Input, .Submit-Input{
+        padding: 10px;
+    }
+    .Contact-Container input{
+        padding: 16px 16px;
+    }
+}
+
+@media all and (min-width: 600px){
+    .Contact-Container form[name="Contact-Form"]{
+        max-width: calc(500px + 10vw);
+    }
 }

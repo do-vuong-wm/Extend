@@ -6,6 +6,12 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Contact from './Contact';
 import Footer from './Footer';
+// font awesome icons
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
+library.add(fab, faBars);
 
 class App extends React.Component {
 
@@ -19,8 +25,6 @@ class App extends React.Component {
 
   componentWillUnmount(){
   }
-
-
 
   render() {
     return(
