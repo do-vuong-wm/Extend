@@ -7,10 +7,10 @@ class Footer extends React.Component{
   render(){
 
     return(
-        <div className="Footer-Container">
-          <FontAwesomeIcon className="Social-Icons" icon={['fab', 'twitter']} />
-          <FontAwesomeIcon className="Social-Icons" icon={['fab', 'facebook']} />
-          <FontAwesomeIcon className="Social-Icons" icon={['fab', 'instagram']} />
+        <div className="footer-container">
+          <FontAwesomeIcon className="social-icons" icon={['fab', 'twitter']} />
+          <FontAwesomeIcon className="social-icons" icon={['fab', 'facebook']} />
+          <FontAwesomeIcon className="social-icons" icon={['fab', 'instagram']} />
         </div>
     );
 

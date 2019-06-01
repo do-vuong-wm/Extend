@@ -1,4 +1,4 @@
-.Contact-Container{
+.contact-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,7 +10,7 @@
     background-color: transparent;
 }
 
-.Contact-Container form[name="Contact-Form"]{
+.contact-container form[name="contact-form"]{
     background-color: #234370;
     display: flex;
     flex-direction: row;
@@ -27,7 +27,7 @@
     padding: 30px;
 }
 
-.Contact-Container .firstName-Input, .lastName-Input, .userEmail-Input, .userMsg-Input, .Submit-Input{
+.contact-container .firstname-input, .lastname-input, .useremail-input, .usermsg-input, .submit-input{
     display: flex;
     flex-direction: column;
     background-color: transparent;
@@ -36,18 +36,18 @@
     padding: 10px 20px 10px 20px;
 }
 
-.Contact-Container .firstName-Input, .lastName-Input{
+.contact-container .firstname-input, .lastname-input{
     width: 50%;
 }
 
 
-.Contact-Container .userEmail-Input, .userMsg-Input, .Submit-Input{
+.contact-container .useremail-input, .usermsg-input, .submit-input{
     width: 100%;
 }
 
 /* select by attributes and tag*/
 
-.Contact-Container span{
+.contact-container span{
 
     font-size: medium;
     font-weight: 400;
@@ -56,7 +56,7 @@
 
 }
 
-.Contact-Container input{
+.contact-container input{
     font-size: 1.05em;
     padding: 16px 32px;
     border: 2px solid #e0e0e0;
@@ -64,23 +64,23 @@
     background-color: white;
 }
 
-.Contact-Container input:focus{
+.contact-container input:focus{
     border: 2px solid blue;
 }
 
-.Contact-Container textarea:focus{
+.contact-container textarea:focus{
     border: 2px solid blue;
 }
 
-.Contact-Container input:focus::placeholder{
+.contact-container input:focus::placeholder{
     color: blue;
 }
 
-.Contact-Container input[name="firstName"], input[name="lastName"]{
+.contact-container input[name="firstName"], input[name="lastName"]{
     width: 100%;
 }
 
-.Contact-Container textarea{
+.contact-container textarea{
     resize: none;
     width: 100%;
     height: 300px;
@@ -90,7 +90,7 @@
     background-color: white;
 }
 
-.Contact-Container input[type="submit"]{
+.contact-container input[type="submit"]{
     cursor: pointer;
     background-color: #09c153;
     color: white;
@@ -98,25 +98,25 @@
     border: 2px solid #1bbc0d;
 }
 
-.Contact-Container input[type="submit"]:active{
+.contact-container input[type="submit"]:active{
     background-color: #16b208;
 }
 
 @media all and (max-width: 600px){
-    .Contact-Container form[name="Contact-Form"]{
+    .contact-container form[name="contact-form"]{
         max-width: 100%;
-        padding: 20px 0 30px 0;
+        padding: 25px 0 10px 0;
     }
-    .Contact-Container .firstName-Input, .lastName-Input, .userEmail-Input, .userMsg-Input, .Submit-Input{
-        padding: 10px;
+    .contact-container .firstname-input, .lastname-input, .useremail-input, .usermsg-input, .submit-input{
+        padding: 12px;
     }
-    .Contact-Container input{
+    .contact-container input{
         padding: 16px 16px;
     }
 }
 
 @media all and (min-width: 600px){
-    .Contact-Container form[name="Contact-Form"]{
+    .contact-container form[name="contact-form"]{
         max-width: calc(500px + 10vw);
     }
 }

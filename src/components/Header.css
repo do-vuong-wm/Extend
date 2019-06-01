@@ -1,4 +1,4 @@
-.Header-Container{
+.header-container{
 
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
 
 }
 
-.Header-Container .Title{
+.header-container .title{
   width: 100%;
   text-align: center;
   height: auto;
@@ -24,7 +24,7 @@
   margin-top: 100px;
 }
 
-.Header-Container .WebsiteInfo{
+.header-container .website-info{
   width: 100%;
   height: auto;
   margin-top: 100px;
@@ -32,8 +32,8 @@
   background-color: transparent;
 }
 
-@media all and (max-width: 352px){
-  .Header-Container{
+@media all and (max-width: 395px){
+  .header-container{
     height: auto;
   }
 }

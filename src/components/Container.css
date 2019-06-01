@@ -1,14 +1,21 @@
-.Container{
+.container{
+  position: -webkit-sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height:auto;
+  background-color: transparent;
+  transition: top 0.3s;
+  margin: 0;
+  padding: 0;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-    height:auto;
-    background-color: transparent;
-    margin-bottom: 20px;
-  
+}
+
+@media all and (max-width: 320px){
+  .container{
+    width: 320px;
   }
-  
+}

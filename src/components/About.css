@@ -1,4 +1,4 @@
-.About-Container{
+.about-container{
 
   display: flex;
   flex-direction: column;
@@ -14,13 +14,13 @@
   /*word-wrap: normal, white-space: pre*/
 }
 
-.About-Container p{
+.about-container p{
   margin-top: 20px;
   text-align: center;
 }
 
-@media all and (max-width: 352px){
-  .About-Container{
+@media all and (max-width: 395px){
+  .about-container{
     height: auto;
   }
 }

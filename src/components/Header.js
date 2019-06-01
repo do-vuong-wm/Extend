@@ -39,13 +39,13 @@ class Header extends Component{
     const userObj = {...users[4]};
     
     return(
-      <div className="Header-Container">
-        <div className="Title">
+      <div className="header-container">
+        <div className="title">
           <h1>
             Extend your business with a website
           </h1>
         </div>
-        <div className="WebsiteInfo">
+        <div className="website-info">
           <h2>We aim to build your website for your business</h2>
           <h2>Gain more customers with a website</h2>
           <button onClick={this.getData}>Fetch</button>

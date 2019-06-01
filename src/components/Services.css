@@ -1,4 +1,4 @@
-.Services-Container{
+.services-container{
 
   display: flex;
   flex-direction: column;
@@ -14,13 +14,13 @@
 
 }
 
-.Services-Container p{
+.services-container p{
   margin-top: 20px;
   text-align: center;
 }
 
-@media all and (max-width: 352px){
-  .Services-Container{
+@media all and (max-width: 395px){
+  .services-container{
     height: auto;
   }
 }

@@ -1,24 +1,24 @@
-.Navbar{
+.navbar{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  padding: 0 15px 0 15px;
   width: 100%;
   height: calc(45px + 0.5vh);
   background-color: transparent;
+  user-select: none;
+  padding: 0 25px 0 25px;
 
 }
 
-.Navbar .Logo{
+.navbar .logo{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-content: center;
   align-items: center;
   margin: 0;
-  padding: 0;
   width: auto;
   height: 100%;
   background-color: transparent;
@@ -26,7 +26,7 @@
 
 }
 
-.Navbar .Logo .Logo-Link{
+.navbar .logo .logo-link{
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -37,7 +37,7 @@
 
 }
 
-.Navbar .NavButtons-Container{
+.navbar .navbuttons-container{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -51,7 +51,7 @@
   
 }
 
-.Navbar .NavButtons-Container .NavButtons{
+.navbar .navbuttons-container .navbuttons{
 
   display: flex;
   flex-direction: row;
@@ -67,7 +67,7 @@
 
 }
 
-.Navbar .NavButtons-Container .NavButtons button{
+.navbar .navbuttons-container .navbuttons button{
 
   cursor: pointer;
   text-align: center;
@@ -85,40 +85,69 @@
 
 }
 
-.Navbar .NavButtons-Container .NavButtons button:hover{
-  background-color: white;
-  color: black;
-}
-
-.Navbar .NavButtons-Container .NavButtons-Menu{
+.navbar .navbuttons-container .navbuttons-menu{
   display: none;
   flex-direction: row;
   justify-content: flex-end;
-  color: white;
-  margin: 0 0 0 10px;
-  width: auto;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
   background-color: transparent;
   flex: 1 1 auto;
 }
+
+.navbar .navbuttons-container .navbuttons-menu .menu{
+  color: white;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border:0;
+}
+
 /* use media for a reponsive webpage*/
 
 @media all and (min-width: 992px){
-  .Navbar{
+  .navbar{
     max-width: 960px;
   }
 }
 
 @media all and (min-width: 1200px){
-  .Navbar{
+  .navbar{
     max-width: 1140px;
   }
 }
 
-@media all and (max-width: 600px) {
-  .Navbar .NavButtons-Container .NavButtons-Menu{
+@media all and (max-width: 700px) {
+  .navbar .navbuttons-container .navbuttons-menu{
     display: flex;
   }
-  .Navbar .NavButtons-Container .NavButtons{
+  .navbar .navbuttons-container .navbuttons{
     display: none;
+  }
+}
+
+@media (hover: hover) {
+  .navbar .navbuttons-container .navbuttons-menu .menu:hover{
+    color: black;
+  }
+  .navbar .navbuttons-container .navbuttons button:hover{
+    background-color: white;
+    color: black;
+  }
+}
+
+@media (hover: none) {
+  .navbar .navbuttons-container .navbuttons-menu:active{
+    color: black;
+  }
+  .navbar .navbuttons-container .navbuttons button:active{
+    background-color: white;
+    color: black;
   }
 }

@@ -94,30 +94,30 @@ class Contact extends Component{
         const { fields, success, errors } = this.state;
 
         return(
-            <div className='Contact-Container'>
-                <form name="Contact-Form" onSubmit={this.handleSubmit}>
+            <div className='contact-container'>
+                <form name="contact-form" onSubmit={this.handleSubmit}>
                     {success}
-                    <label className="firstName-Input">
+                    <label className="firstname-input">
                         <span>First Name:</span>
                         <input type="text" name="firstName" placeholder="First Name" value={fields.firstName} onChange={this.handleChange} required/>
                         {errors['name']}
                     </label>
-                    <label className="lastName-Input">
+                    <label className="lastname-input">
                         <span>Last Name:</span>
                         <input type="text" name="lastName" placeholder="Last Name" value={fields.lastName} onChange={this.handleChange} required/>
                         {errors['name']}
                     </label>
-                    <label className="userEmail-Input">
+                    <label className="useremail-input">
                         <span>Email:</span>
                         <input type="email" name="userEmail" placeholder="Email" value={fields.userEmail} onChange={this.handleChange} required/>
                         {errors['email']}
                     </label>
-                    <label className="userMsg-Input">
+                    <label className="usermsg-input">
                         <span>Message:</span>
-                        <textarea name="userMsg" value={fields.userMsg} onChange={this.handleChange} required/>
+                        <textarea name="userMsg" value={fields.userMsg} onChange={this.handleChange} />
                         {errors['msg']}
                     </label>
-                    <label className="Submit-Input">
+                    <label className="submit-input">
                         <input type="submit" value="Submit"/>
                     </label>
                 </form>

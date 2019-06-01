@@ -1,4 +1,4 @@
-.Footer-Container{
+.footer-container{
 
   display: flex;
   flex-direction: row;
@@ -11,7 +11,7 @@
 
 }
 
-.Footer-Container .Social-Icons{
+.footer-container .social-icons{
   width: 30px;
   height: auto;
   margin-right: 10px;

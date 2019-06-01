@@ -10,15 +10,15 @@ class Home extends Component{
         return(
             <Fragment>
 
-                <Container>
+                <Container type="innerContent">
                     <Header/>
                 </Container>
 
-                <Container>
+                <Container type="innerContent">
                     <Services/>
                 </Container>
 
-                <Container>
+                <Container type="innerContent">
                     <About/>
                 </Container>
                 
