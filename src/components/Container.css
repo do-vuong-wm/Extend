@@ -1,5 +1,4 @@
 .container{
-  position: -webkit-sticky;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +10,19 @@
   transition: top 0.3s;
   margin: 0;
   padding: 0;
+}
 
+/* custom container styles*/
+.static-navbar{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #59c2ff;
+}
+
+.inner-content{
+  padding: 15px;
 }
 
 @media all and (max-width: 320px){
